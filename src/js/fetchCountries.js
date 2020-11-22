@@ -1,9 +1,11 @@
-// const BASE_URL = 'https://restcountries.eu/rest/v2';
+import renderCountryCard from './renderCountryCard'
 
-// function fetchCountries(searchQuery) {
-//   return fetch(`${BASE_URL}/name/${searchQuery}`).then(response =>
-//     response.json(),
-//   );
-// }
+export default function fetchCountries(searchQuery) {
+let countryName = searchQuery.target.value;
+const BASE_URL = 'https://restcountries.eu/rest/v2/name';
 
-// export default { fetchCountries };
+  return fetch(`${BASE_URL}/${countryName}`)
+    .then(response => response.json())
+    .then(renderCountryCard)
+    .catch(error => console.log(error))
+}

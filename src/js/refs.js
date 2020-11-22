@@ -1,6 +1,7 @@
-// export default function getRefs() {
-//     return {
-//         inputForm: document.querySelector('.input-form'),
-//         list: document.querySelector('.county-list')
-//     };
-// }
+export default function getRefs() {
+    return {
+        countryList: document.querySelector('.country-list'),
+        inputFormEl: document.querySelector('.input-form'),
+        countryCardEl: document.querySelector('.country__item'),
+    };
+}
