@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Yuliia14/goit-js-hw-12-countrie/issues"
   },
-  "homepage": "https://github.com/Yuliia14/goit-js-hw-12-countrie#readme",
+  "homepage": "https://yuliia14.github.io/goit-js-hw-12-countrie/",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
